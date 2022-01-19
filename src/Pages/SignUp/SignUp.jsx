@@ -2,14 +2,16 @@ import React from "react";
 import "../../Style/AuthStyle.css";
 import Textfield from "../../Components/TextFeild/TextField";
 import { Formik, Form } from "formik";
-import FormImg from "../../Assets/img1.jpg";
+import FormImg from "../../Assets/signup.jpg";
 import Button from "../../Components/Button/Button";
 import { BsPersonFill } from "react-icons/bs";
 import { IoMail } from "react-icons/io5";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { GiPadlock } from "react-icons/gi";
+import { Link, useNavigate } from "react-router-dom";
 
 function SignUp() {
+  const navigate = useNavigate();
   return (
     <div className="main">
       <div className="container">
@@ -37,8 +39,19 @@ function SignUp() {
                     <Textfield placeholder="Password" Icon={GiPadlock} />
                     <div className="signUpBtnDiv">
                       <Button btnText="Sign Up" width="59%" />
-                      <Button btnText="Sign In"  width="40%" /> {/* customClass="signInBtn" */}
+                      <Button
+                        btnText="Sign In"
+                        width="40%"
+                        onClick={() => navigate("/signin")}
+                      />
+                      {/* customClass="signInBtn" */}
                     </div>
+                    <p className="textpra">
+                    Already have an account? 
+                      <Link className="textLink" to="/signin">
+                        Sign In
+                      </Link>
+                    </p>
                   </Form>
                 </div>
               </div>

@@ -2,13 +2,14 @@ import React from "react";
 import "../../Style/AuthStyle.css";
 import Textfield from "../../Components/TextFeild/TextField";
 import { Formik, Form } from "formik";
-import LoginImg from "../../Assets/loginImg.jpg";
+import LoginImg from "../../Assets/signin.webp";
 import Button from "../../Components/Button/Button";
 import { IoMail } from "react-icons/io5";
 import { GiPadlock } from "react-icons/gi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function SignIn() {
+  const navigate= useNavigate();
   return (
     <div className="main">
       <div className="container">
@@ -33,14 +34,21 @@ function SignIn() {
                   <Form>
                     <Textfield placeholder="Email" Icon={IoMail} />
                     <Textfield placeholder="Password" Icon={GiPadlock} />
+                    <span className="forgotSpan">
+                      <Link className="textLink" to="">
+                        Forgot Password?
+                      </Link>
+                    </span>
                     <div className="signUpBtnDiv">
-                      <Button btnText="Sign In" width="59%"/>
-                      <Button btnText="Sign Up" width="40%"/>
+                      <Button btnText="Sign In" width="59%" />
+                      <Button btnText="Sign Up" width="40%" onClick={()=>navigate("/signup")}/>
                     </div>
-                    <div className="textDiv">
-                    <Link to="">Forgot Password?</Link>
-                    <p>Don't have an account? <Link to="/signup">SignUp here</Link></p>
-                    </div>
+                    <p className="textpra">
+                      Don't have an account?
+                      <Link className="textLink" to="/signup">
+                        Sign Up
+                      </Link>
+                    </p>
                   </Form>
                 </div>
               </div>

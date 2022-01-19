@@ -134,3 +134,16 @@
   display: flex;
   justify-content: space-between;
 }
+.forgotSpan{
+  display: block;
+  margin: 10px 0 0 10px;
+}
+.textLink{
+  text-decoration: none;
+  color: #f0bd24;
+}
+.textpra{
+  color: #fff;
+  margin: 10px 0 0 10px;
+
+}
