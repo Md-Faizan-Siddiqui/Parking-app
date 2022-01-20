@@ -3,14 +3,14 @@ import "./TextField.css";
 // import { BsPersonFill } from "react-icons/bs";
 
 const Textfield = ({ label, placeholder, required, Icon, ...props }) => {
-  const [field, meta] = useField(props);
+  // const [field, meta] = useField(props);
   return (
     <div>
       <label htmlFor={label}>{label}</label>
-      <div
-        className={`${"inputDiv"} ${
-          meta.touched && meta.error && "is-invalid"
-        }`}
+      <div className="inputDiv"
+        // className={`${"inputDiv"} ${
+        //   meta.touched && meta.error && "is-invalid"
+        // }`}
       >
         {Icon && <Icon className="inputIcon" />}
         <input
@@ -23,8 +23,8 @@ const Textfield = ({ label, placeholder, required, Icon, ...props }) => {
           margin="normal"
           InputLabelProps={{ shrink: true }}
           variant="outlined"
-          {...field}
-          {...props}
+          // {...field}
+          // {...props}
         />
       </div>
       {/* <ErrorMessage

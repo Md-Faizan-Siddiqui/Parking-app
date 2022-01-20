@@ -1,5 +1,5 @@
 import Product from "../../Pages/Product";
-import Home from "../../Pages/Home";
+import Home from "../../Pages/Profile/Profile";
 import Service from "../../Pages/Service";
 import Contact from "../../Pages/Contact";
 import SignIn from "../../Pages/SignIn/SignIn";
@@ -7,7 +7,7 @@ import SignUp from "../../Pages/SignUp/SignUp";
 
 export const MenuItems = [
   {
-    title: "Home",
+    title: "Profile",
     url: "/",
     cName: "navLinks",
     component: <Home />,
