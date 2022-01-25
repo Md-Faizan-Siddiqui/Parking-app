@@ -41,8 +41,7 @@ function Navbar() {
               );
             })}
           </ul>
-        </div>
-        {/* {width.width < 700 && ( */}
+        </div>  
         <div className="menuIcon" onClick={() => setToggle((prev) => !prev)}>
           {toggle ? (
             <GameIcons.GiHamburgerMenu size="30px" color="white" />
@@ -50,7 +49,6 @@ function Navbar() {
             <IoClose size="30px" color="white" />
           )}
         </div>
-        {/* )} */}
       </nav>
     </>
   );

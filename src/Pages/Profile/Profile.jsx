@@ -1,22 +1,16 @@
 import React from "react";
 import "./Profile.css";
 import TextField from "../../Components/TextFeild/TextField";
-
+import ProfileImageSection from "../../Components/ProfileCards/ProfileImageSection";
+import ProfileDetailsSection from "../../Components/ProfileCards/ProfileDetailsSection";
 
 function Profile() {
   return (
     <div className="profileMain">
-      {/* <div className="formDiv">
-
-          <TextField placeholder={"Area"} />
-          <TextField placeholder={"Area"} />
-          <TextField placeholder={"Area"} />
-          <TextField placeholder={"Area"} />
-          <TextField placeholder={"Area"} />
-          <TextField placeholder={"Area"} />
-          <TextField placeholder={"Area"} />
-          <TextField placeholder={"Area"} />
-      </div> */}
+      <div className="proContainer">
+        <ProfileImageSection />
+        <ProfileDetailsSection />
+      </div>
     </div>
   );
 }

@@ -1,9 +1,25 @@
-/* .profileMain{
+.profileMain{
     display: flex;
     justify-content: center;
 }
-.formDiv{
-    padding: 50px;
-    border:1px solid yellow;
-    width: 50%;
-} */
+.proContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+@media screen and (max-width: 1050px) {
+    .proContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .profileMain{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 640px) {
+    .proContainer{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
