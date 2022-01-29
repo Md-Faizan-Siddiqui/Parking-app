@@ -27,17 +27,17 @@
 
 .inputIcon {
   color: #6032db;
-  /* position: absolute; */
   font-size: 20px;
+  /* position: absolute; */
   /* padding-left: 20px; */
   /* width: 100%; */
 }
 
-.inputDiv:focus {
+/* .inputDiv:focus {
   outline: none;
   border: none;
   border: 1px solid #23c0e9;
-}
+} */
 
 .inputDiv:hover {
   outline: #f79820;
